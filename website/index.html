@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tasteful One‑Pager</title>
+    <meta name="description" content="A clean, responsive one‑page website template." />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' rx='56' fill='%230f172a'/%3E%3Cpath d='M72 144c0-40 32-72 72-72 18 0 34 6 46 17l-20 22c-7-7-16-11-26-11-22 0-40 18-40 40s18 40 40 40c10 0 19-4 26-11l20 22c-12 11-28 17-46 17-40 0-72-32-72-72Z' fill='%23a78bfa'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Homepage">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Tasteful</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Thoughtful design. Clean execution.</p>
+            <h1 id="hero-title">A tasteful one‑pager that feels effortless</h1>
+            <p class="lede">Responsive, accessible, and easy to customize. Start here and grow at your own pace.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#contact">Get in touch</a>
+              <a class="btn btn-ghost" href="#features">Explore features</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card">
+              <div class="visual-blob"></div>
+              <div class="visual-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">About</h2>
+          <p class="section-lede">This starter keeps the details simple so your content can shine. Built with semantic HTML, modern CSS, and a sprinkle of JS.</p>
+          <div class="about-split">
+            <p>
+              It’s intentionally minimal yet expressive, with a graceful color system, type scale, and components that adapt to any content.
+              Use this as a foundation for a personal site, product page, or lightweight portfolio.
+            </p>
+            <ul class="checks" role="list">
+              <li>Responsive by default</li>
+              <li>Accessible semantics</li>
+              <li>Dark mode friendly</li>
+              <li>Zero build tools required</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section alt" aria-labelledby="features-title">
+        <div class="container">
+          <h2 id="features-title">Features</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Effortless layout</h3>
+              <p>Centered content grid with smart spacing, tuned for readability across devices.</p>
+            </article>
+            <article class="card">
+              <h3>Polished details</h3>
+              <p>Buttons, cards, and subtle motion that feel refined but never loud.</p>
+            </article>
+            <article class="card">
+              <h3>Ready to extend</h3>
+              <p>Drop in sections for FAQs, pricing, galleries, or a blog without friction.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section" aria-labelledby="work-title">
+        <div class="container">
+          <h2 id="work-title">Selected Work</h2>
+          <div class="grid">
+            <figure class="tile">
+              <div class="thumb"></div>
+              <figcaption>Project A — Crisp landing page</figcaption>
+            </figure>
+            <figure class="tile">
+              <div class="thumb"></div>
+              <figcaption>Project B — Elegant portfolio</figcaption>
+            </figure>
+            <figure class="tile">
+              <div class="thumb"></div>
+              <figcaption>Project C — Product spotlight</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Contact</h2>
+          <p class="section-lede">Have a question or idea? Say hello — I’d love to hear from you.</p>
+          <form class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea>
+            </div>
+            <div class="actions">
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <a class="btn btn-ghost" href="mailto:hello@example.com">Email instead</a>
+            </div>
+            <p class="form-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Tasteful</span>
+        <a class="toplink" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
