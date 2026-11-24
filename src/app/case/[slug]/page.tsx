@@ -23,10 +23,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
   const { content, frontmatter } = await getCaseStudyBySlug(params.slug);
 
   return (
-    <article className="prose dark:prose-invert max-w-3xl mx-auto">
+    <article className="prose prose-zinc max-w-3xl mx-auto">
       <h1>{frontmatter.title}</h1>
       <p className="opacity-70 text-sm -mt-4">
-        {new Date(frontmatter.date).toLocaleDateString()} · {frontmatter.role}
+        {new Date(frontmatter.date).toLocaleDateString()}
+        {frontmatter.role ? ` · ${frontmatter.role}` : ""}
       </p>
 
       <MDXRemote
